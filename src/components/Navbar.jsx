@@ -4,7 +4,7 @@ import userIcon from '../assets/user.png'
 import { AuthContext } from '../provider/AuthProvider'
 
 export default function Navbar() {
-  const { user, logOut } = useContext(AuthContext)
+  const { user,logOut } = useContext(AuthContext)
   return (
     <div className='flex justify-between items-center'>
       <div className=''>{user && user.email}</div>
